@@ -9,6 +9,11 @@ Currently, two official plugins are available:
 This is a project to demonstrate my proficiency in reactjs, it is a single page e-commerce application,
 this project is front-end-only, written with reactjs library
 
+## live
+This project is served live here
+<a src='https://react-candidate-test.onrender.com/'>react-test</a>
+https://react-candidate-test.onrender.com/
+
 ## Installation
 To run this project locally follow the following instrutions
 ```
