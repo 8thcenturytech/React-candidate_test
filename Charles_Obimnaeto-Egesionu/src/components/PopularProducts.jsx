@@ -152,7 +152,7 @@ const PopularProducts = () => {
 
                             {product.discount && <p className="font-medium py-[2px] px-2 text-white text-xs rounded bg-[#0AAD0A] absolute left-4 top-4">{product.discount}</p>}
 
-                            <div className="items-center justify-center gap-4 absolute top-[40%] md:top-[50%] right-[40%] sm:right-[30%] md:right-[20%] product-actions">
+                            <div className="items-center justify-center gap-4 absolute top-[40%] md:top-[50%] right-[30%] md:right-[20%] product-actions">
                                 <span className="p-2 rounded-md shadow-xl bg-white hover:bg-[#0AAD0A] hover:text-white"><IoEyeOutline /></span>
                                 <span className="p-2 rounded-md shadow-xl bg-white hover:bg-[#0AAD0A] hover:text-white"><GrFavorite /></span>
                                 <span className="p-2 rounded-md shadow-xl bg-white hover:bg-[#0AAD0A] hover:text-white"><PiArrowsLeftRightLight /></span>
@@ -160,7 +160,7 @@ const PopularProducts = () => {
                         </div>
                     ))
                 }
-            </section>
+            </section>git 
         </main>
     );
 }
