@@ -1,0 +1,26 @@
+
+.feature-section {
+    margin-top: 100px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    line-height: 2;
+}
+
+.feature {
+    padding: 11px;
+}
+
+.bi {
+    color: #0AAD0A;
+}
+
+@media (max-width: 996px) {
+    .feature-list {
+        flex-direction: column;
+    }
+  }

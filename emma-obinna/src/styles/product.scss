@@ -1,0 +1,150 @@
+
+.product-section {
+    margin-top: 100px;
+    text-align: left;
+}
+
+.pro > button {
+  background-color: #0AAD0A;
+  color: white;
+  border-color: #0AAD0A;
+
+  &hover {
+    border-color: #0AAD0A;
+    background-color: #0AAD0A;
+  }
+}
+
+.product-card {
+    height: 400px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .card-image-container {
+    position: relative; /* For absolute positioning of icons */
+  }
+  
+  .card-img {
+    height: 200px; /* Adjust image height */
+    object-fit: cover; /* Ensure image fits the container */
+  }
+  
+  .card-icons {
+    position: absolute;
+    top: 25vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-btn {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .icon-text {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .product-card:hover .card-icons {
+    opacity: 1;
+  }
+  
+  .product-card:hover .icon-container:hover .icon-text {
+    opacity: 1;
+  }
+  
+  .product-card .card-body {
+    flex: 1;
+  }
+  
+  .product-card .card-title {
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-card .card-text {
+    margin-bottom: 1rem;
+  }
+  
+  
+  .product-card img {
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product-col {
+    flex: 1 1 20%;
+    max-width: 20%; 
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+  }
+
+  .product-col-2 {
+    flex: 1 1 20%;
+    max-width: 30%; 
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+  }
+
+  .card-date-section {
+    margin-top: 80px;
+    text-align: left;
+    line-height: 2;
+  }
+
+  .shift {
+    position: absolute;
+    left: 300px;
+    top: 1690px;
+    width: 60vw;
+}
+  
+@media (max-width: 996px) {
+  .product-col {
+    max-width: 100%;
+  }
+
+  .product-col-2 {
+    max-width: 100%;
+  }
+  
+  .shift {
+    position: unset;
+    width: unset;
+  }
+}

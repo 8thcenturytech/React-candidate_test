@@ -1,0 +1,43 @@
+.discount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.disc {
+    background-color: #f8f9fa;
+    width: 48%;
+    text-align: left;
+    padding: 50px;
+}
+
+.disc > button {
+    background-color: #001E2B;
+    border-color:  #001E2B;
+    padding: 13px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+    &:hover {
+      background-color: lighten( #001E2B, 10%);
+      border-color: lighten( #001E2B, 10%);
+    }
+}
+
+@media (max-width: 996px) {
+    .discount {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .disc {
+        width: 100%;
+    }
+    
+  }
